@@ -8,11 +8,12 @@ import { AppComponent } from './app.component';
   declarations: [
     AppComponent
   ],
+  // pour declarer les module a utiliser
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent] // pour dire quelle page va demarer par defaut
 })
 export class AppModule { }
