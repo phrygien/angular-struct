@@ -10,7 +10,11 @@ const routes: Routes = [
   {
     path: 'admin', loadChildren: () => import('./admin/admin.module').then( a => a.AdminModule),
   },
-  { path: '**', component: ErrorComponent }
+  { path: '**', component: ErrorComponent },
+
+  {
+    path: 'auth', loadChildren: () => import('./auth/auth.module').then(a => a.AuthModule)
+  }
 ];
 
 @NgModule({
